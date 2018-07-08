@@ -14,7 +14,7 @@ def createExamples():
          for eachNum in numbersWeHave:
              for eachVer in versionsWeHave:
                     #print str(eachNum)+'.'+str(eachVer)
-                    imageFilePath='images/numbers/'+str(eachNum)+'.'+str(eachVer)+'.png'
+                    imageFilePath='Images/numbers/'+str(eachNum)+'.'+str(eachVer)+'.png'
                     ei=Image.open(imageFilePath)
                     eiar=np.array(ei)
                     eiar1=str(eiar.tolist())
@@ -118,25 +118,25 @@ def whatNumIsThis(filePath):
 
 createExamples()
 
-#loading input images(which is in images folder) for detection 
-whatNumIsThis('images/1.6.png')
+#loading input Images(which is in Images folder) for detection 
+whatNumIsThis('Images/1.6.png')
 """
-i=Image.open('images/numbers/0.1.png')
+i=Image.open('Images/numbers/0.1.png')
 iar=np.asarray(i)
 #threshold(iar)
 #print iar
 #plt.imshow(iar)
 #plt.show() 
 
-i2=Image.open('images/numbers/y0.4.png')
+i2=Image.open('Images/numbers/y0.4.png')
 iar2=np.asarray(i2)
 
 
-i3=Image.open('images/numbers/y0.5.png')
+i3=Image.open('Images/numbers/y0.5.png')
 iar3=np.asarray(i3)
 
 
-i4=Image.open('images/sentdex.png')
+i4=Image.open('Images/sentdex.png')
 iar4=np.asarray(i4)
 createExamples()
 threshold(iar3)
